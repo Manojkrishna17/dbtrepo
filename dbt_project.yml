@@ -46,9 +46,11 @@ models:
     
     # Default output schema in Snowflake
     staging:
+      +database: appolo_hc
       +schema: staging              # → your staging models will go to APPOLO_HC.staging
       +materialized: view
       
     marts:
+      +database: appolo_hc
       +schema: marts                # → final dimension/fact tables will go here
       +materialized: table
