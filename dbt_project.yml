@@ -36,6 +36,14 @@ models:
       +materialized: table
 
 
+sources:
+  - name: data_feed
+    database: DBT_LABS
+    schema: RAW_SCHEMA
+    tables:
+      - name: raw_customer
+
+
 
 
 # Default configurations for all your models
