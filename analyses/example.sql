@@ -1,3 +1,3 @@
 
 
-SELECT * FROM {{ source('data_feed', 'raw_customer') }}
+SELECT * FROM {{ source('data_feed', 'raw_customer') }} order 
